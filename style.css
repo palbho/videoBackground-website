@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+}
+.header{
+    width:100%;
+    height:100vh;
+}
+.navbar{
+    background-color: #0C356A;
+}
+.navbar-brand{
+    color:#fff !important;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+}
+.nav-item{
+    margin-left:20px !important;
+}
+.nav-link{
+    color:#fff !important;
+}
+.fa-bars{
+    font-size: 2rem;
+    color:#fff;
+}
+.navbar-toggler{
+    color:#0C356A;
+}
+.back-video{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+}
+.header-text{
+   height:90vh;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.header-text h1{
+    color:#fff !important;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    transition: .5s;
+}
+.header-text h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color:transparent !important;
+    
+}
+.header-text a{
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    font-size: 24px;
+    border-radius: 10px;
+    color:#fff;
+    display:inline-block;
+    margin:30px 0;
+}
+.header-text a:hover{
+    background-color:#0C356A !important;
+    color:#fff !important;
+    
+}
+/* -------ACTIVITIES-------*/
+.activities{
+    width:100%;
+    height:100vh;
+    padding: 20px 40px;
+    
+}
+.activities h1{
+    color:#000;
+    border-bottom: 4px solid #64CCC5;
+    width:200px;
+    font-weight: 700;
+    margin:0 auto 50px;
+    padding: 5px;
+}
+.carousel-item img{
+    width:80%;
+    height:80vh;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+/*------------Pricing and packages----------------*/
+.packages{
+    padding:0 100px;
+    margin:100px 0;
+}
+.packages>h1{
+    border-bottom: 4px solid #64CCC5;
+    width:200px;
+    font-weight: 700;
+    margin:50px auto;
+    padding:10px;
+    
+}
+.btn-package{
+    background-color: #64CCC5 !important;
+    margin-top:20px;
+}
+/*----------------testimonial-------*/
+.testimonial{
+    margin-top:100px;
+    padding:100px 100px 150px 100px;
+    background:#0C356A;
+}
+.testimonial>h1{
+    color: #fff;;
+    border-bottom: 4px solid #fff;
+    width:250px;
+    font-weight: 700;
+    margin:0 auto 50px;
+    padding: 5px;
+}
+.card{
+    border:none;
+    height:400px;
+    margin-bottom: 10px;
+}
+.user-image{
+    margin:10px 0;
+    
+}
+.user-image img{
+    border:4px solid #f3eeee;
+}
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+.ratings i{
+    color:blue;
+}
+
+/*------------Footer------------------*/
+.footer{
+  background: #fff;
+  padding:100px 100px 50px;
+}
+.footer-container{
+    color:#000;
+}
+.head h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2rem;
+    font-weight: 600 ;
+    margin-bottom:10px;
+}
+.head h6{
+    font-size: 1.2rem;
+}
+.head .fa-brands{
+    margin:10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #64CCC5;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.quick-link h2{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.quick-link li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.quick-link a{
+    color: #242222;
+    text-decoration: none;
+}
+.footer-form{
+    position: relative;
+}
+.newsletter h1{
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 700;
+}
+.newsletter input{
+   width:100%;
+    padding:5px 20px;
+    border:0;
+    outline: 0;
+    background: #e0e1f7;
+}
+.newsletter button{
+    background-color: #64CCC5;
+    padding:5px 7px;
+    color:#fff;
+    position: absolute;
+    top:0;
+    right:0;
+    border:0;
+    outline:0;
+}
+::placeholder{
+    font-size: .8rem;;
+}
+.copywrite{
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+    font-size: .7rem;
+}
+/*--------------media query----------------------*/
+@media screen and (max-width:695px){
+    .header-text h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .activities>h1{
+        width:150px;
+    }
+    .packages>h1{
+        width:150px;
+    }
+    .testimonial>h1{
+        width:180px;
+    }
+
+    
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Font awesome-->
+  <script src="https://kit.fontawesome.com/24d45e9ccf.js" crossorigin="anonymous"></script>
+  <!--CSS Stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>website with video background</title>
+</head>
+
+<body>
+  <!----navbar---->
+  <section class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Beaches</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header-text">
+      <h1>Life at Beach</h1>
+      <a href="#">Explore Now</a>
+    </div>
+    <video muted autoplay loop class="back-video" src="img/sea.mp4"></video>
+
+  </section>
+  <!---------Activities-------------------------------------------------->
+  <section class="activities">
+    <h1>Activities</h1>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/surfing.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Surfing</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/boating1.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Boating</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/fishing.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fishing</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+  <!-------packages -------------------------------->
+  <section class="packages">
+    <h1>Packages</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Solo Package</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$50<small class="text-muted fw-light">/day</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Limited to 1 person</li>
+              <li>Free Lunch and Dinner</li>
+              <li>Local Guide</li>
+              <li>Include all water activity</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-package">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Couple Package</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$100<small class="text-muted fw-light">/day</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Limited to 3 person</li>
+              <li>Free Lunch and Dinner</li>
+              <li>Local Guide</li>
+              <li>Include all water activity</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-package">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow">
+          <div class="card-header py-3 ">
+            <h4 class="my-0 fw-normal">Family Package</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$150<small class="text-muted fw-light">/day</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Limited to 5 person</li>
+              <li>Free Lunch and Dinner</li>
+              <li>Local Guide</li>
+              <li>Include all water activity</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-package">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<!------Testimonials--------------------->
+  <section class="testimonial">
+    <h1>Testimonials</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+
+            <div class="user-image">
+
+              <img src="img/angela.jpg" class="rounded-circle" width="80">
+
+            </div>
+
+            <div class="user-content">
+
+              <h5 class="mb-0">Angela Lee</h5>
+              <span>Software Developer</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+
+            </div>
+
+            <div class="ratings">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+
+            <div class="user-image">
+
+              <img src="img/james.webp" class="rounded-circle" width="80">
+
+            </div>
+
+            <div class="user-content">
+
+              <h5 class="mb-0">James Bond</h5>
+              <span>Software Developer</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+
+            </div>
+
+            <div class="ratings">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card text-center">
+
+            <div class="user-image">
+
+              <img src="img/bruce.png" class="rounded-circle" width="80">
+
+            </div>
+
+            <div class="user-content">
+
+              <h5 class="mb-0">Alon Dusk</h5>
+              <span>Software Developer</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+
+            </div>
+
+            <div class="ratings">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  <!---------Footer---------------------------------------->
+
+  <section class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-md-4 text-center mb-4 head">
+         <h1>Beaches</h1>
+         <h6>Follow Us</h6>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="col-md-4 text-center mb-4 quick-link">
+          <h2>Quick Links</h2>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">Testimonials</a></li>
+          
+        </div>
+        <div class="col-md-4 text-center newsletter">
+          <h1>Subscribe to NewsLetter</h1>
+          <form action="" class="footer-form">
+            <input type="text" placeholder="Enter Email here">
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <p class="copywrite">Copywrite by 2023-24</p>
+
+  </section>
+
+</body>
+
+</html>
